@@ -1,0 +1,747 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "hand-drawn-minimal-background_02939577937995974.avif",
+            "path": "hand-drawn-minimal-background_02939577937995974.avif",
+            "type": 100
+          },
+          {
+            "name": "hand-drawn-minimal-background_23890409891316566.avif",
+            "path": "hand-drawn-minimal-background_23890409891316566.avif",
+            "type": 100
+          },
+          {
+            "name": "hand-drawn-minimal-background_4925916348331123.avif",
+            "path": "hand-drawn-minimal-background_4925916348331123.avif",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"6ff9097a9f17090d86dd\",\"target\":\"1f9328acb825c635d5af\",\"type\":3},{\"source\":\"df65e1a85789501eae69\",\"target\":\"1f9328acb825c635d5af\",\"type\":3},{\"source\":\"f98a9b9a135441473076\",\"target\":\"1f9328acb825c635d5af\",\"type\":3},{\"source\":\"95e3aec1d76ae00db02c\",\"target\":\"1f9328acb825c635d5af\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'hand-drawn-minimal-background_23-2149017896.avif'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hand-drawn-minimal-background_02939577937995974.avif\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"80D\"}}}}}]}}",
+      "displayName": "LOS Comparison",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "08091d71d3535fd0361f",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1f9328acb825c635d5af\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":240.00000000000003,\"z\":3000,\"width\":362.8571428571429,\"height\":478.5714285714286,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"keyDriversVisual\",\"projections\":{\"Target\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"ExplainBy\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\"},{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\"},{\"queryRef\":\"hospital_discharges.ccs_diagnosis_description\"},{\"queryRef\":\"hospital_discharges.patient_disposition\"},{\"queryRef\":\"hospital_discharges.gender\"},{\"queryRef\":\"hospital_discharges.age_group\"},{\"queryRef\":\"surgical_program_volume_summary.Surgical Program Size\"},{\"queryRef\":\"hospital_discharges.health_service_area\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"surgical_program_volume_summary\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_risk_of_mortality\"},\"Name\":\"hospital_discharges.apr_risk_of_mortality\",\"NativeReferenceName\":\"apr_risk_of_mortality\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_severity_of_illness_description\"},\"Name\":\"hospital_discharges.apr_severity_of_illness_description\",\"NativeReferenceName\":\"apr_severity_of_illness_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ccs_diagnosis_description\"},\"Name\":\"hospital_discharges.ccs_diagnosis_description\",\"NativeReferenceName\":\"ccs_diagnosis_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"patient_disposition\"},\"Name\":\"hospital_discharges.patient_disposition\",\"NativeReferenceName\":\"patient_disposition\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"},\"Name\":\"hospital_discharges.age_group\",\"NativeReferenceName\":\"age_group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Surgical Program Size\"},\"Name\":\"surgical_program_volume_summary.Surgical Program Size\",\"NativeReferenceName\":\"Surgical Program Size\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"keyInfluencersVisual\":[{\"properties\":{\"secondaryColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.6}}}}}}}],\"keyDrivers\":[{\"properties\":{\"allowKeyDriversCounting\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectedSort\":{\"expr\":{\"Literal\":{\"Value\":\"'count'\"}}},\"selectedAnalysis\":{\"expr\":{\"Literal\":{\"Value\":\"'topProfiles'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 478.57,
+          "width": 362.86,
+          "x": 0.00,
+          "y": 240.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"2c3102b5918a2f9abc41\",\"layouts\":[{\"id\":0,\"position\":{\"x\":639.142804827009,\"y\":75.42859758649551,\"z\":1000,\"width\":205.71428571428572,\"height\":134.2857142857143,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Discharges\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 134.29,
+          "width": 205.71,
+          "x": 639.14,
+          "y": 75.43,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"53525f43e4463de8e862\",\"layouts\":[{\"id\":0,\"position\":{\"x\":403.4285191127232,\"y\":75.42859758649551,\"z\":7000,\"width\":205.71428571428572,\"height\":134.2857142857143,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Hospitals\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"},\"Name\":\"_Measures.Total Hospitals\",\"NativeReferenceName\":\"Total Hospitals\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 134.29,
+          "width": 205.71,
+          "x": 403.43,
+          "y": 75.43,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"6ff9097a9f17090d86dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":96.28566196986608,\"y\":108.28574044363839,\"z\":2000,\"width\":242.85714285714286,\"height\":67.14285714285715,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"hospital_discharges.health_service_area\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"}]},\"syncGroup\":{\"groupName\":\"health_service_area\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Health Service Area'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Hospital'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.14,
+          "width": 242.86,
+          "x": 96.29,
+          "y": 108.29,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"80a8e0e3d6c0cc82c575\",\"layouts\":[{\"id\":0,\"position\":{\"x\":138.57142857142858,\"y\":0,\"z\":8000,\"width\":1000.0000000000001,\"height\":50,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"text\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}},\"selector\":{\"id\":\"hover\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}},\"selector\":{\"id\":\"press\"}}],\"pages\":[{\"properties\":{\"showByDefault\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showHiddenPages\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 1000.00,
+          "x": 138.57,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"95e3aec1d76ae00db02c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.2857142857143,\"y\":515.7142857142858,\"z\":5000,\"width\":312.8571428571429,\"height\":204.2857142857143,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"hospital_discharges.facility_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Tooltips\":[{\"queryRef\":\"_Measures.% Var Average LOS Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average LOS Days\"},\"Name\":\"_Measures.% Var Average LOS Days\",\"NativeReferenceName\":\"% Var Average LOS Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Bottom 3: Highest Avg LOS Days'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"1320cab798455d4ce6b4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"facility_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}],\"Top\":3}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":1},{\"name\":\"16394d53c7680c703303\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average LOS Days\"}},\"type\":\"Advanced\",\"howCreated\":0,\"ordinal\":2}]",
+          "height": 204.29,
+          "width": 312.86,
+          "x": 944.29,
+          "y": 515.71,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"9a253af39e6994666edc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":919.142804827009,\"y\":75.42859758649551,\"z\":6000,\"width\":205.71428571428572,\"height\":134.2857142857143,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average LOS Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 134.29,
+          "width": 205.71,
+          "x": 919.14,
+          "y": 75.43,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"df65e1a85789501eae69\",\"layouts\":[{\"id\":0,\"position\":{\"x\":405.7142857142857,\"y\":240.00000000000003,\"z\":0,\"width\":470.00000000000006,\"height\":480.00000000000006,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"hospital_discharges.facility_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Y2\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Tooltips\":[{\"queryRef\":\"_Measures.% Var Average LOS Days\"},{\"queryRef\":\"_Measures.Total Surgeons\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Surgeons\"},\"Name\":\"_Measures.Total Surgeons\",\"NativeReferenceName\":\"Total Surgeons\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average LOS Days\"},\"Name\":\"_Measures.% Var Average LOS Days\",\"NativeReferenceName\":\"% Var Average LOS Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.2}}}}}},\"selector\":{\"metadata\":\"_Measures.Average LOS Days\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average LOS Days and Total Surgeons by top 15 Hospitals'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"facility_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}],\"Top\":15}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 480.00,
+          "width": 470.00,
+          "x": 405.71,
+          "y": 240.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f98a9b9a135441473076\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.2857142857143,\"y\":240.00000000000003,\"z\":4000,\"width\":312.8571428571429,\"height\":204.2857142857143,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"hospital_discharges.facility_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Tooltips\":[{\"queryRef\":\"_Measures.% Var Average LOS Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average LOS Days\"},\"Name\":\"_Measures.% Var Average LOS Days\",\"NativeReferenceName\":\"% Var Average LOS Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 3: Highest Avg LOS Days'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"1320cab798455d4ce6b4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"facility_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}],\"Top\":3}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":1},{\"name\":\"16394d53c7680c703303\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average LOS Days\"}},\"type\":\"Advanced\",\"howCreated\":0,\"ordinal\":2}]",
+          "height": 204.29,
+          "width": 312.86,
+          "x": 944.29,
+          "y": 240.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Hospitals",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "2657cded422af1107abb",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5bd08501e37cfd7e70e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":17.83882477093419,\"y\":46.65538786244326,\"z\":1000,\"width\":301.8878038158093,\"height\":150.94390190790466,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Hospitals\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"},\"Name\":\"_Measures.Total Hospitals\",\"NativeReferenceName\":\"Total Hospitals\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 150.94,
+          "width": 301.89,
+          "x": 17.84,
+          "y": 46.66,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b751782119f5d84c0527\",\"layouts\":[{\"id\":0,\"position\":{\"x\":17.83882477093419,\"y\":245.62689492286304,\"z\":0,\"width\":491.2537898457261,\"height\":344.42653980803703,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"hospital_discharges.health_service_area\",\"active\":true}],\"Values\":[{\"queryRef\":\"_Measures.Total Hospitals\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"},\"Name\":\"_Measures.Total Hospitals\",\"NativeReferenceName\":\"Total Hospitals\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 344.43,
+          "width": 491.25,
+          "x": 17.84,
+          "y": 245.63,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'hand-drawn-minimal-background_23-2149017896.avif'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hand-drawn-minimal-background_4925916348331123.avif\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"80D\"}}}}}]}}",
+      "displayName": "Home",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "59d9e908b64b66442f83",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"013a4038908e59a6df1f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":114.28571428571429,\"y\":395.7142857142857,\"z\":0,\"width\":1000.0000000000001,\"height\":50,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"text\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}},\"selector\":{\"id\":\"hover\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}},\"selector\":{\"id\":\"press\"}}],\"pages\":[{\"properties\":{\"showByDefault\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showHiddenPages\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 1000.00,
+          "x": 114.29,
+          "y": 395.71,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7a46a866b23bb58f1860\",\"layouts\":[{\"id\":0,\"position\":{\"x\":114.28571428571429,\"y\":131.42857142857144,\"z\":1000,\"width\":1000.0000000000001,\"height\":228.57142857142858,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Healthcare Data Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontFamily\":\"Georgia\",\"fontSize\":\"66pt\",\"color\":\"#ad5129\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 228.57,
+          "width": 1000.00,
+          "x": 114.29,
+          "y": 131.43,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'hand-drawn-minimal-background_23-2149017896.avif'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hand-drawn-minimal-background_4925916348331123.avif\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"80D\"}}}}}]}}",
+      "displayName": "Hospital Profile",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "6af68afd386585e522bc",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"158737d5e5e3a1252747\",\"layouts\":[{\"id\":0,\"position\":{\"x\":140,\"y\":0,\"z\":8000,\"width\":1000.0000000000001,\"height\":50,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"text\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}},\"selector\":{\"id\":\"hover\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}},\"selector\":{\"id\":\"press\"}}],\"pages\":[{\"properties\":{\"showByDefault\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showHiddenPages\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 1000.00,
+          "x": 140.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"2e873a20ea9b87271f4b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":36.571415492466514,\"y\":235.7142857142856,\"z\":0,\"width\":284.2857142857143,\"height\":200,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"TargetValue\":[{\"queryRef\":\"_Measures.Average LOS per Day ALL\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS per Day ALL\"},\"Name\":\"_Measures.Average LOS per Day ALL\",\"NativeReferenceName\":\"Average LOS per Day ALL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average LOS Days'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 284.29,
+          "x": 36.57,
+          "y": 235.71,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3f515167befe64b8a21c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":369.4285583496092,\"y\":447.14285714285694,\"z\":3000,\"width\":374.28571428571433,\"height\":272.8571428571429,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\",\"active\":true}],\"Series\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_risk_of_mortality\"},\"Name\":\"hospital_discharges.apr_risk_of_mortality\",\"NativeReferenceName\":\"apr_risk_of_mortality\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Discharges by Mortality Risk'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.86,
+          "width": 374.29,
+          "x": 369.43,
+          "y": 447.14,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"59a9f09cf8b5f3bca0d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":71.42857142857143,\"y\":50,\"z\":7000,\"width\":1138.5714285714287,\"height\":65.71428571428572,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Title Selected Facility\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Title Selected Facility\"},\"Name\":\"_Measures.Title Selected Facility\",\"NativeReferenceName\":\"Title Selected Facility\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.71,
+          "width": 1138.57,
+          "x": 71.43,
+          "y": 50.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"79deccfa6c5beb0a9040\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.42855834960938,\"y\":149.9999999999999,\"z\":6000,\"width\":315.7142857142857,\"height\":71.42857142857143,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"hospital_discharges.facility_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Hospital Name'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'University Hospital'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 71.43,
+          "width": 315.71,
+          "x": 19.43,
+          "y": 150.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"a0c62aa210104980337b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":796.5714154924668,\"y\":447.14285714285694,\"z\":5000,\"width\":374.28571428571433,\"height\":272.8571428571429,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.patient_disposition\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"patient_disposition\"},\"Name\":\"hospital_discharges.patient_disposition\",\"NativeReferenceName\":\"patient_disposition\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Discharges by Patient Disposition'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.86,
+          "width": 374.29,
+          "x": 796.57,
+          "y": 447.14,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"beabe563df0d1ab45110\",\"layouts\":[{\"id\":0,\"position\":{\"x\":797.1428571428572,\"y\":150,\"z\":4000,\"width\":374.28571428571433,\"height\":272.8571428571429,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.ccs_diagnosis_description\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ccs_diagnosis_description\"},\"Name\":\"hospital_discharges.ccs_diagnosis_description\",\"NativeReferenceName\":\"ccs_diagnosis_description\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Discharges by Diagnosis'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.86,
+          "width": 374.29,
+          "x": 797.14,
+          "y": 150.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"d8463a3143ebd8d1b085\",\"layouts\":[{\"id\":0,\"position\":{\"x\":369.4285583496092,\"y\":149.9999999999999,\"z\":2000,\"width\":427.14285714285717,\"height\":272.8571428571429,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\",\"active\":true}],\"Series\":[{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_severity_of_illness_description\"},\"Name\":\"hospital_discharges.apr_severity_of_illness_description\",\"NativeReferenceName\":\"apr_severity_of_illness_description\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Discharges by Severity of Illness'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.86,
+          "width": 427.14,
+          "x": 369.43,
+          "y": 150.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e57a41b6b6590574f0c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":50.857129778180784,\"y\":501.4285714285713,\"z\":1000,\"width\":284.2857142857143,\"height\":187.14285714285717,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"TargetValue\":[{\"queryRef\":\"_Measures.Average Cost per Discharge ALL\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge ALL\"},\"Name\":\"_Measures.Average Cost per Discharge ALL\",\"NativeReferenceName\":\"Average Cost per Discharge ALL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Cost per Discharge'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 187.14,
+          "width": 284.29,
+          "x": 50.86,
+          "y": 501.43,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"185L\"}}}}}]},\"visibility\":1}",
+      "displayName": "Key Influencers",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "84329344b726130e067a",
+      "ordinal": 11,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2cd65424c94eee842257\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":88,\"z\":1000,\"width\":548,\"height\":540,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"keyDriversVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\"},{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\"},{\"queryRef\":\"hospital_discharges.ccs_diagnosis_description\"},{\"queryRef\":\"hospital_discharges.patient_disposition\"},{\"queryRef\":\"hospital_discharges.gender\"},{\"queryRef\":\"hospital_discharges.age_group\"},{\"queryRef\":\"surgical_program_volume_summary.Surgical Program Size\"},{\"queryRef\":\"hospital_discharges.health_service_area\"}],\"Target\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"surgical_program_volume_summary\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_risk_of_mortality\"},\"Name\":\"hospital_discharges.apr_risk_of_mortality\",\"NativeReferenceName\":\"apr_risk_of_mortality\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_severity_of_illness_description\"},\"Name\":\"hospital_discharges.apr_severity_of_illness_description\",\"NativeReferenceName\":\"apr_severity_of_illness_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ccs_diagnosis_description\"},\"Name\":\"hospital_discharges.ccs_diagnosis_description\",\"NativeReferenceName\":\"ccs_diagnosis_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"patient_disposition\"},\"Name\":\"hospital_discharges.patient_disposition\",\"NativeReferenceName\":\"patient_disposition\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"},\"Name\":\"hospital_discharges.age_group\",\"NativeReferenceName\":\"age_group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Surgical Program Size\"},\"Name\":\"surgical_program_volume_summary.Surgical Program Size\",\"NativeReferenceName\":\"Surgical Program Size\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"keyInfluencersVisual\":[{\"properties\":{\"secondaryColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.6}}}}}}}],\"keyDrivers\":[{\"properties\":{\"allowKeyDriversCounting\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"numericTargetSelectedKind\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 540.00,
+          "width": 548.00,
+          "x": 640.00,
+          "y": 88.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"94dd7b6821d0a47b934a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":56,\"y\":88,\"z\":0,\"width\":548,\"height\":540,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"keyDriversVisual\",\"projections\":{\"Target\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"ExplainBy\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\"},{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\"},{\"queryRef\":\"hospital_discharges.ccs_diagnosis_description\"},{\"queryRef\":\"hospital_discharges.patient_disposition\"},{\"queryRef\":\"hospital_discharges.gender\"},{\"queryRef\":\"hospital_discharges.age_group\"},{\"queryRef\":\"surgical_program_volume_summary.Surgical Program Size\"},{\"queryRef\":\"hospital_discharges.health_service_area\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"surgical_program_volume_summary\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_risk_of_mortality\"},\"Name\":\"hospital_discharges.apr_risk_of_mortality\",\"NativeReferenceName\":\"apr_risk_of_mortality\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_severity_of_illness_description\"},\"Name\":\"hospital_discharges.apr_severity_of_illness_description\",\"NativeReferenceName\":\"apr_severity_of_illness_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ccs_diagnosis_description\"},\"Name\":\"hospital_discharges.ccs_diagnosis_description\",\"NativeReferenceName\":\"ccs_diagnosis_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"patient_disposition\"},\"Name\":\"hospital_discharges.patient_disposition\",\"NativeReferenceName\":\"patient_disposition\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"},\"Name\":\"hospital_discharges.age_group\",\"NativeReferenceName\":\"age_group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Surgical Program Size\"},\"Name\":\"surgical_program_volume_summary.Surgical Program Size\",\"NativeReferenceName\":\"Surgical Program Size\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"keyInfluencersVisual\":[{\"properties\":{\"secondaryColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.6}}}}}}}],\"keyDrivers\":[{\"properties\":{\"allowKeyDriversCounting\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectedSort\":{\"expr\":{\"Literal\":{\"Value\":\"'count'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 540.00,
+          "width": 548.00,
+          "x": 56.00,
+          "y": 88.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Cost",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "8e513befa81997d98962",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7363f388ca70dec948ab\",\"layouts\":[{\"id\":0,\"position\":{\"x\":708.8888888888889,\"y\":65.55555555555556,\"z\":3000,\"width\":280,\"height\":150,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average LOS per Day ALL\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS per Day ALL\"},\"Name\":\"_Measures.Average LOS per Day ALL\",\"NativeReferenceName\":\"Average LOS per Day ALL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS per Day ALL\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 280.00,
+          "x": 708.89,
+          "y": 65.56,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"92485367fd05e35ec78c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":330,\"y\":73.33333333333333,\"z\":2000,\"width\":402.22222222222223,\"height\":132.22222222222223,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average Cost per Discharge ALL\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge ALL\"},\"Name\":\"_Measures.Average Cost per Discharge ALL\",\"NativeReferenceName\":\"Average Cost per Discharge ALL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge ALL\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 132.22,
+          "width": 402.22,
+          "x": 330.00,
+          "y": 73.33,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"93faca29402f40b469ed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"z\":1000,\"width\":1112.2222222222222,\"height\":375.55555555555554,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"hospital_discharges.facility_name\"},{\"queryRef\":\"hospital_discharges.health_service_area\"},{\"queryRef\":\"_Measures.Average Cost per Discharge\"},{\"queryRef\":\"_Measures.% Var Average Cost per Discharge\"},{\"queryRef\":\"_Measures.Average LOS Days\"},{\"queryRef\":\"_Measures.% Var Average LOS Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average Cost per Discharge\"},\"Name\":\"_Measures.% Var Average Cost per Discharge\",\"NativeReferenceName\":\"% Var Average Cost per Discharge\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average LOS Days\"},\"Name\":\"_Measures.% Var Average LOS Days\",\"NativeReferenceName\":\"% Var Average LOS Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average Cost per Discharge\"}},\"Right\":{\"Literal\":{\"Value\":\"20910D\"}}}},\"Value\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"_Measures.Average Cost per Discharge\"}},{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"_Measures.% Var Average LOS Days\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average LOS Days\"}},\"Right\":{\"RangePercent\":{\"Min\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average LOS Days\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":3}},\"Scope\":[]}},\"Max\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average LOS Days\"}},\"Scope\":[{\"AllRolesRef\":{}}]}},\"Function\":4}},\"Scope\":[]}},\"Percent\":0.0265}}}},\"Value\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"_Measures.Average LOS Days\"}}]}}}",
+          "filters": "[]",
+          "height": 375.56,
+          "width": 1112.22,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"bc3bae25819611a399a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "LOS Cause",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a12d11b8a284ce078703",
+      "ordinal": 9,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1c816da969a7656d907d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_risk_of_mortality\"},\"Name\":\"hospital_discharges.apr_risk_of_mortality\",\"NativeReferenceName\":\"apr_risk_of_mortality\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"2e30c920b46e5d2e9851\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300,\"y\":0,\"width\":280,\"height\":280,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_severity_of_illness_description\"},\"Name\":\"hospital_discharges.apr_severity_of_illness_description\",\"NativeReferenceName\":\"apr_severity_of_illness_description\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 300.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"4859fb1462b55c867bcd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590,\"y\":0,\"width\":280,\"height\":280,\"z\":4000,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.ccs_diagnosis_description\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ccs_diagnosis_description\"},\"Name\":\"hospital_discharges.ccs_diagnosis_description\",\"NativeReferenceName\":\"ccs_diagnosis_description\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 590.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7a30b3301eeca957ad3a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300,\"y\":290,\"width\":280,\"height\":280,\"z\":3000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.age_group\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"},\"Name\":\"hospital_discharges.age_group\",\"NativeReferenceName\":\"age_group\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 300.00,
+          "y": 290.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7b6126b62b247184cb77\",\"layouts\":[{\"id\":0,\"position\":{\"x\":880,\"y\":0,\"width\":280,\"height\":280,\"z\":6000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.patient_disposition\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"patient_disposition\"},\"Name\":\"hospital_discharges.patient_disposition\",\"NativeReferenceName\":\"patient_disposition\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 880.00,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"96f0babd0f5188e00fff\",\"layouts\":[{\"id\":0,\"position\":{\"x\":880,\"y\":290,\"width\":280,\"height\":280,\"z\":7000,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.health_service_area\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 880.00,
+          "y": 290.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"b743133c0abe946d9e41\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590,\"y\":290,\"width\":280,\"height\":280,\"z\":5000,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"surgical_program_volume_summary.Surgical Program Size\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"surgical_program_volume_summary\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Surgical Program Size\"},\"Name\":\"surgical_program_volume_summary.Surgical Program Size\",\"NativeReferenceName\":\"Surgical Program Size\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 590.00,
+          "y": 290.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"ceeed4bc69486d9f467c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"width\":280,\"height\":280,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "LOS",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a49c29c9a77d001a8176",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"183e81927af74e5526d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46.65538786244326,\"y\":259.34906782358166,\"z\":1000,\"width\":504.9759627464447,\"height\":300.5155865257375,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"gender\"}},\"Right\":{\"Literal\":{\"Value\":\"'F'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"gender\"}},\"Right\":{\"Literal\":{\"Value\":\"'M'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 300.52,
+          "width": 504.98,
+          "x": 46.66,
+          "y": 259.35,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"185bfcb81bb5f7199d89\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average LOS Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"69c6d7ed0367ddce1e4b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":574.9590445401096,\"y\":279.9323271746596,\"z\":2000,\"width\":426.75957721234863,\"height\":204.46037622070722,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"hospital_discharges.Age Band\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Average LOS Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Age Band\"},\"Name\":\"hospital_discharges.Age Band\",\"NativeReferenceName\":\"Age Band\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"Age Band\"}},\"Right\":{\"Literal\":{\"Value\":\"'Age 50+'\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 204.46,
+          "width": 426.76,
+          "x": 574.96,
+          "y": 279.93,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Health Comparisons",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b1db2e8cb00305025aa5",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1683fc69f11ad1808169\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.30543225179652,\"y\":76.84416824402419,\"z\":0,\"width\":675.1309067153554,\"height\":432.24844637263607,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"hospital_discharges.facility_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Y2\":[{\"queryRef\":\"_Measures.Average LOS Days\"}],\"Tooltips\":[{\"queryRef\":\"_Measures.Total Surgeons\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Surgeons\"},\"Name\":\"_Measures.Total Surgeons\",\"NativeReferenceName\":\"Total Surgeons\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"facility_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}],\"Top\":15}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 432.25,
+          "width": 675.13,
+          "x": 34.31,
+          "y": 76.84,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b937f4ded73a89505934\",\"layouts\":[{\"id\":0,\"position\":{\"x\":756.0917268295951,\"y\":67.23864721352116,\"z\":1000,\"width\":337.5654533576777,\"height\":138.59394629725793,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Surgeons\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Surgeons\"},\"Name\":\"_Measures.Total Surgeons\",\"NativeReferenceName\":\"Total Surgeons\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Surgeons\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 138.59,
+          "width": 337.57,
+          "x": 756.09,
+          "y": 67.24,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Discharges",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b21ad2c50dfed363b1de",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6786409178985fefbd63\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":358.1487127087556,\"height\":155.06055377812024,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Discharges\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 155.06,
+          "width": 358.15,
+          "x": 9.61,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a9efbca70381a340db4b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":45.2831705723714,\"y\":295.02671736545005,\"z\":2000,\"width\":445.9706192733547,\"height\":268.95458885408465,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.gender\",\"active\":true}],\"Series\":[{\"queryRef\":\"hospital_discharges.age_group\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"%GT Total Discharges\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"},\"Name\":\"hospital_discharges.age_group\",\"NativeReferenceName\":\"age_group\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Scope\":[]}},\"Operator\":3}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Total Discharges\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"name\":\"53d6894d70757bd2703d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"age_group\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'50 to 69'\"}}],[{\"Literal\":{\"Value\":\"'70 or Older'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 268.95,
+          "width": 445.97,
+          "x": 45.28,
+          "y": 295.03,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"f137d0e522b6a7b93fa1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":333.4488014874621,\"y\":31.560997671652792,\"z\":1000,\"width\":397.94301412083956,\"height\":205.83259351077908,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"%GT Total Discharges\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}},\"Scope\":[]}},\"Operator\":3}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Total Discharges\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 205.83,
+          "width": 397.94,
+          "x": 333.45,
+          "y": 31.56,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Cost Cause",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "d67344ac94a696bad77e",
+      "ordinal": 10,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"01f96d96c7b6787bc687\",\"layouts\":[{\"id\":0,\"position\":{\"x\":880,\"y\":290,\"width\":280,\"height\":280,\"z\":7000,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.health_service_area\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 880.00,
+          "y": 290.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"16c841578b47f2ddf021\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300,\"y\":0,\"width\":280,\"height\":280,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_severity_of_illness_description\"},\"Name\":\"hospital_discharges.apr_severity_of_illness_description\",\"NativeReferenceName\":\"apr_severity_of_illness_description\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 300.00,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"44a78c06895383506228\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590,\"y\":290,\"width\":280,\"height\":280,\"z\":5000,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"surgical_program_volume_summary.Surgical Program Size\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"surgical_program_volume_summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Surgical Program Size\"},\"Name\":\"surgical_program_volume_summary.Surgical Program Size\",\"NativeReferenceName\":\"Surgical Program Size\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 590.00,
+          "y": 290.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"4e0326743cc7c27dd698\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_risk_of_mortality\"},\"Name\":\"hospital_discharges.apr_risk_of_mortality\",\"NativeReferenceName\":\"apr_risk_of_mortality\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7825b0afc92ec8d95932\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300,\"y\":290,\"width\":280,\"height\":280,\"z\":3000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.age_group\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"},\"Name\":\"hospital_discharges.age_group\",\"NativeReferenceName\":\"age_group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 300.00,
+          "y": 290.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8078904f5b01e904a476\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590,\"y\":0,\"width\":280,\"height\":280,\"z\":4000,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.ccs_diagnosis_description\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ccs_diagnosis_description\"},\"Name\":\"hospital_discharges.ccs_diagnosis_description\",\"NativeReferenceName\":\"ccs_diagnosis_description\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 590.00,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8da3b6c648e66226ee1d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"width\":280,\"height\":280,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.gender\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a1713515476295db9193\",\"layouts\":[{\"id\":0,\"position\":{\"x\":880,\"y\":0,\"width\":280,\"height\":280,\"z\":6000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Category\":[{\"queryRef\":\"hospital_discharges.patient_disposition\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"patient_disposition\"},\"Name\":\"hospital_discharges.patient_disposition\",\"NativeReferenceName\":\"patient_disposition\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 880.00,
+          "y": 0.00,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"04282c56957e4e9744be\",\"target\":\"05d5d05c72b3db3fa0e0\",\"type\":3},{\"source\":\"7c8c81e09e88e28d52bc\",\"target\":\"05d5d05c72b3db3fa0e0\",\"type\":3},{\"source\":\"3098a3ce35b315c27b2e\",\"target\":\"05d5d05c72b3db3fa0e0\",\"type\":3}],\"objects\":{\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'hand-drawn-minimal-background_23-2149017896.avif'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"hand-drawn-minimal-background_23890409891316566.avif\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"80D\"}}}}}]}}",
+      "displayName": "Cost Comparision",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "db1c806ec3d5545c49d6",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"04282c56957e4e9744be\",\"layouts\":[{\"id\":0,\"position\":{\"x\":455.7142857142857,\"y\":240.00000000000003,\"z\":0,\"width\":474.28571428571433,\"height\":480.00000000000006,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"_Measures.Average LOS Days\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Size\":[{\"queryRef\":\"_Measures.Total Discharges\"}],\"Series\":[{\"queryRef\":\"hospital_discharges.facility_name\"}],\"Tooltips\":[{\"queryRef\":\"_Measures.% Var Average Cost per Discharge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average Cost per Discharge\"},\"Name\":\"_Measures.% Var Average Cost per Discharge\",\"NativeReferenceName\":\"% Var Average Cost per Discharge\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Average LOS Days'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"_Measures.Average LOS Days\"}},\"Function\":1}}}},\"selector\":{\"metadata\":\"_Measures.Average LOS Days\",\"id\":\"1\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Average Cost per Discharge'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"_Measures.Average Cost per Discharge\"}},\"Function\":1}}}},\"selector\":{\"metadata\":\"_Measures.Average Cost per Discharge\",\"id\":\"2\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'90th Average Cost per Discharge'\"}}},\"value\":{\"expr\":{\"Percentile\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"_Measures.Average Cost per Discharge\"}},\"K\":0.9}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":-0.25}}}}}},\"selector\":{\"metadata\":\"_Measures.Average Cost per Discharge\",\"id\":\"3\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Average LOS Days vs Average Cost per Discharge by Hospital'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 480.00,
+          "width": 474.29,
+          "x": 455.71,
+          "y": 240.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"05d5d05c72b3db3fa0e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":240.00000000000003,\"z\":1000,\"width\":428.5714285714286,\"height\":480.00000000000006,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"keyDriversVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"hospital_discharges.apr_risk_of_mortality\"},{\"queryRef\":\"hospital_discharges.apr_severity_of_illness_description\"},{\"queryRef\":\"hospital_discharges.ccs_diagnosis_description\"},{\"queryRef\":\"hospital_discharges.patient_disposition\"},{\"queryRef\":\"hospital_discharges.gender\"},{\"queryRef\":\"hospital_discharges.age_group\"},{\"queryRef\":\"surgical_program_volume_summary.Surgical Program Size\"},{\"queryRef\":\"hospital_discharges.health_service_area\"}],\"Target\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"surgical_program_volume_summary\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_risk_of_mortality\"},\"Name\":\"hospital_discharges.apr_risk_of_mortality\",\"NativeReferenceName\":\"apr_risk_of_mortality\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"apr_severity_of_illness_description\"},\"Name\":\"hospital_discharges.apr_severity_of_illness_description\",\"NativeReferenceName\":\"apr_severity_of_illness_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"ccs_diagnosis_description\"},\"Name\":\"hospital_discharges.ccs_diagnosis_description\",\"NativeReferenceName\":\"ccs_diagnosis_description\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"patient_disposition\"},\"Name\":\"hospital_discharges.patient_disposition\",\"NativeReferenceName\":\"patient_disposition\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"gender\"},\"Name\":\"hospital_discharges.gender\",\"NativeReferenceName\":\"gender\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"age_group\"},\"Name\":\"hospital_discharges.age_group\",\"NativeReferenceName\":\"age_group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Surgical Program Size\"},\"Name\":\"surgical_program_volume_summary.Surgical Program Size\",\"NativeReferenceName\":\"Surgical Program Size\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"keyInfluencersVisual\":[{\"properties\":{\"secondaryColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0.6}}}}}}}],\"keyDrivers\":[{\"properties\":{\"allowKeyDriversCounting\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"numericTargetSelectedKind\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"selectedAnalysis\":{\"expr\":{\"Literal\":{\"Value\":\"'keyInfluencers'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 480.00,
+          "width": 428.57,
+          "x": 0.00,
+          "y": 240.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"1da7695889bb71b7db13\",\"layouts\":[{\"id\":0,\"position\":{\"x\":384.28571428571433,\"y\":67.14285714285715,\"z\":4000,\"width\":310,\"height\":134.2857142857143,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 134.29,
+          "width": 310.00,
+          "x": 384.29,
+          "y": 67.14,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"3098a3ce35b315c27b2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.2857142857143,\"y\":240.00000000000003,\"z\":2000,\"width\":312.8571428571429,\"height\":204.2857142857143,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"hospital_discharges.facility_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Tooltips\":[{\"queryRef\":\"_Measures.% Var Average Cost per Discharge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average Cost per Discharge\"},\"Name\":\"_Measures.% Var Average Cost per Discharge\",\"NativeReferenceName\":\"% Var Average Cost per Discharge\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 3: Highest Avg Cost per Discharge'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"1320cab798455d4ce6b4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"facility_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}],\"Top\":3}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":1},{\"name\":\"16394d53c7680c703303\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average LOS Days\"}},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":2}]",
+          "height": 204.29,
+          "width": 312.86,
+          "x": 944.29,
+          "y": 240.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"48ba3ad4c3fc35376daa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":694.2857142857143,\"y\":67.14285714285715,\"z\":5000,\"width\":185.71428571428572,\"height\":134.2857142857143,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Average LOS Days\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"},\"Name\":\"_Measures.Average LOS Days\",\"NativeReferenceName\":\"Average LOS Days\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 134.29,
+          "width": 185.71,
+          "x": 694.29,
+          "y": 67.14,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"7c8c81e09e88e28d52bc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":944.2857142857143,\"y\":515.7142857142857,\"z\":3000,\"width\":312.8571428571429,\"height\":204.2857142857143,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"hospital_discharges.facility_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"_Measures.Average Cost per Discharge\"}],\"Tooltips\":[{\"queryRef\":\"_Measures.% Var Average Cost per Discharge\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"hospital_discharges.facility_name\",\"NativeReferenceName\":\"facility_name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"% Var Average Cost per Discharge\"},\"Name\":\"_Measures.% Var Average Cost per Discharge\",\"NativeReferenceName\":\"% Var Average Cost per Discharge\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"},\"Name\":\"_Measures.Average Cost per Discharge\",\"NativeReferenceName\":\"Average Cost per Discharge\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average Cost per Discharge\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.2}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Bottom 3: Highest Avg Cost per Discharge'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"1320cab798455d4ce6b4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"hospital_discharges\"}},\"Property\":\"facility_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Average LOS Days\"}}}],\"Top\":3}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"facility_name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":1},{\"name\":\"16394d53c7680c703303\",\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"_Measures\"}},\"Property\":\"Average LOS Days\"}},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":2}]",
+          "height": 204.29,
+          "width": 312.86,
+          "x": 944.29,
+          "y": 515.71,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8187dea8f427238e8c21\",\"layouts\":[{\"id\":0,\"position\":{\"x\":902.8571428571429,\"y\":67.14285714285715,\"z\":6000,\"width\":185.71428571428572,\"height\":134.2857142857143,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Hospitals\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"},\"Name\":\"_Measures.Total Hospitals\",\"NativeReferenceName\":\"Total Hospitals\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Hospitals\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 134.29,
+          "width": 185.71,
+          "x": 902.86,
+          "y": 67.14,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"94da9193c9e2340970df\",\"layouts\":[{\"id\":0,\"position\":{\"x\":105.71428571428572,\"y\":100,\"z\":8000,\"width\":242.85714285714286,\"height\":67.14285714285715,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"hospital_discharges.health_service_area\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"hospital_discharges\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"health_service_area\"},\"Name\":\"hospital_discharges.health_service_area\",\"NativeReferenceName\":\"health_service_area\"}]},\"syncGroup\":{\"groupName\":\"health_service_area\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Select Health Service Area'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Hospital'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.14,
+          "width": 242.86,
+          "x": 105.71,
+          "y": 100.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"b71bce68d331b9bd2e68\",\"layouts\":[{\"id\":0,\"position\":{\"x\":140,\"y\":0,\"z\":9000,\"width\":1000.0000000000001,\"height\":50,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"text\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}}},\"selector\":{\"id\":\"hover\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}},\"selector\":{\"id\":\"press\"}}],\"pages\":[{\"properties\":{\"showByDefault\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showHiddenPages\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 50.00,
+          "width": 1000.00,
+          "x": 140.00,
+          "y": 0.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"dc198adb0d99ac6179d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1088.5714285714287,\"y\":67.14285714285715,\"z\":7000,\"width\":168.57142857142858,\"height\":134.2857142857143,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"_Measures.Total Discharges\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"_Measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"},\"Name\":\"_Measures.Total Discharges\",\"NativeReferenceName\":\"Total Discharges\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Total Discharges\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 134.29,
+          "width": 168.57,
+          "x": 1088.57,
+          "y": 67.14,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

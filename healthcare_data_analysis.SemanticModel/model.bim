@@ -1,0 +1,797 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"hospital_discharges\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.136.1202.0 (24.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "ee7f460c-f09f-c2c4-457e-e455e5f45cc5",
+        "fromColumn": "facility_name",
+        "fromTable": "hospital_discharges",
+        "toColumn": "facility_name",
+        "toTable": "surgical_program_volume_summary"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "hospital_discharges",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "health_service_area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1a6b8ba0-d625-496e-b146-597fd68841ce",
+            "sourceColumn": "health_service_area",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hospital_county",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dd09502c-9201-43b4-95ed-3f304b1f6fc4",
+            "sourceColumn": "hospital_county",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "operating_certificate_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b1230740-65f6-43e0-bfac-26a437def8c2",
+            "sourceColumn": "operating_certificate_number",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "facility_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0d625c54-4c2d-458d-bf4d-016e33a6545f",
+            "sourceColumn": "facility_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "facility_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a6bbe06d-ac42-4584-b75f-ed383b0c3832",
+            "sourceColumn": "facility_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "age_group",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4a0b2f0a-375e-4a9d-8718-1e50fbb13481",
+            "sourceColumn": "age_group",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "zip_code_3_digits",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c19348ca-f933-4e6d-aeb7-da93725b93dd",
+            "sourceColumn": "zip_code_3_digits",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1d68de6b-4f8b-49bf-85dd-0bbbc63daa10",
+            "sourceColumn": "gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "race",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6d1c6685-672b-4bf1-928b-8835f1ce81fb",
+            "sourceColumn": "race",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ethnicity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8a4dc6c1-833f-4731-8c67-9c5f049b6b17",
+            "sourceColumn": "ethnicity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "length_of_stay",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8abb28b2-2c5a-4158-a50e-0bbee78ae786",
+            "sourceColumn": "length_of_stay",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "type_of_admission",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4f6fb677-d310-41ce-889f-e4f9b4eecb51",
+            "sourceColumn": "type_of_admission",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "patient_disposition",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "22338560-adf2-4081-b8a4-a0f3f0733ad4",
+            "sourceColumn": "patient_disposition",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "discharge_year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f9c3ea8b-ee22-4d62-86e9-272a431a42e4",
+            "sourceColumn": "discharge_year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ccs_diagnosis_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fb9c42ea-dfad-4848-92c9-718cabf19272",
+            "sourceColumn": "ccs_diagnosis_code",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ccs_diagnosis_description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b1e511e4-6504-47cf-b87a-3c3f04b84cf3",
+            "sourceColumn": "ccs_diagnosis_description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ccs_procedure_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5d31346c-667f-49d7-90ed-f9d9443e4001",
+            "sourceColumn": "ccs_procedure_code",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ccs_procedure_description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7036c2a3-bba0-484d-bef1-c3ea5e79bfa0",
+            "sourceColumn": "ccs_procedure_description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "apr_drg_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d387afce-de9f-4bfe-9642-112f7ec65ef7",
+            "sourceColumn": "apr_drg_code",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "apr_drg_description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3359cefe-7b05-4af9-8156-450785eee605",
+            "sourceColumn": "apr_drg_description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "apr_mdc_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dc86811c-1f5b-4cd9-af86-bff722b969b8",
+            "sourceColumn": "apr_mdc_code",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "apr_mdc_description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4c416550-bbff-4bc9-8f28-7dc1e3738ceb",
+            "sourceColumn": "apr_mdc_description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "apr_severity_of_illness_code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "92e63f63-893c-4d04-8057-27b6b13149dc",
+            "sourceColumn": "apr_severity_of_illness_code",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "apr_severity_of_illness_description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "24d1fac5-b052-41b3-b2a4-508b7e9968fc",
+            "sourceColumn": "apr_severity_of_illness_description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "apr_risk_of_mortality",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "befaad09-8b3e-4963-8eef-d67b06689efd",
+            "sourceColumn": "apr_risk_of_mortality",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "apr_medical_surgical_description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8bc6ba34-90df-4def-971d-80d05d6dcf7d",
+            "sourceColumn": "apr_medical_surgical_description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "attending_provider_license_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f42840b9-108e-4630-b314-de286ed78d04",
+            "sourceColumn": "attending_provider_license_number",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "operating_provider_license_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6bdaacb9-5607-4826-b3db-5db545d7d3dc",
+            "sourceColumn": "operating_provider_license_number",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "total_charges",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e960f579-6721-4446-a6cd-68f8d13975e6",
+            "sourceColumn": "total_charges",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "total_costs",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c13236cc-dc49-4780-8287-c8ecaf8c6616",
+            "sourceColumn": "total_costs",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Age Band",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF( OR(hospital_discharges[age_group] = \"50 to 69\", hospital_discharges[age_group] = \"70 or older\"), \"Age 50+\", \"Age < 50\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "cbbed7ae-279d-470b-888a-e6ffae1b1c4e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "d54ec19f-a8b3-40d3-aa00-97f16e8f7da2",
+        "partitions": [
+          {
+            "name": "hospital_discharges",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\britt\\Documents\\Personal\\Data Analysis\\health_analysis\\case-study-healthcare-analytics-in-power-bi\\Datasets\\hospital_inpatient_discharges_totalhipreplacement.csv\"),[Delimiter=\",\", Columns=30, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"health_service_area\", type text}, {\"hospital_county\", type text}, {\"operating_certificate_number\", Int64.Type}, {\"facility_id\", Int64.Type}, {\"facility_name\", type text}, {\"age_group\", type text}, {\"zip_code_3_digits\", type text}, {\"gender\", type text}, {\"race\", type text}, {\"ethnicity\", type text}, {\"length_of_stay\", Int64.Type}, {\"type_of_admission\", type text}, {\"patient_disposition\", type text}, {\"discharge_year\", Int64.Type}, {\"ccs_diagnosis_code\", Int64.Type}, {\"ccs_diagnosis_description\", type text}, {\"ccs_procedure_code\", Int64.Type}, {\"ccs_procedure_description\", type text}, {\"apr_drg_code\", Int64.Type}, {\"apr_drg_description\", type text}, {\"apr_mdc_code\", Int64.Type}, {\"apr_mdc_description\", type text}, {\"apr_severity_of_illness_code\", Int64.Type}, {\"apr_severity_of_illness_description\", type text}, {\"apr_risk_of_mortality\", type text}, {\"apr_medical_surgical_description\", type text}, {\"attending_provider_license_number\", Int64.Type}, {\"operating_provider_license_number\", Int64.Type}, {\"total_charges\", type number}, {\"total_costs\", type number}}),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([ccs_procedure_description] = \"HIP REPLACEMENT,TOT/PRT\"))",
+                "in",
+                "    #\"Filtered Rows\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Measures",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "097d9eb710f242b0a0f4c5107a9d9ca2"
+          },
+          {
+            "name": "436ba87b-9c83-4389-a31b-ebd06a36be98",
+            "value": "{\"Expression\":\"\"}"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "790d8a93-d450-41c5-b8a6-d7a385533df0",
+            "sourceColumn": "[Column]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "6c52a630-b1f6-46f1-bcca-9d441b99f535",
+        "measures": [
+          {
+            "name": "Total Hospitals",
+            "expression": "DISTINCTCOUNT(hospital_discharges[facility_id])",
+            "formatString": "0",
+            "lineageTag": "85ca692d-e67e-4cb0-874c-a991ee1df19c"
+          },
+          {
+            "name": "Total Discharges",
+            "expression": "COUNTROWS(hospital_discharges)",
+            "formatString": "0",
+            "lineageTag": "a7a2f31d-54ea-40ad-aab7-fb72c09f915b"
+          },
+          {
+            "name": "Average LOS Days",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "AVERAGE(hospital_discharges[length_of_stay])",
+            "lineageTag": "3a2ac8b8-02f9-4748-8dbf-1d3694b54f86"
+          },
+          {
+            "name": "Total Surgeons",
+            "expression": "DISTINCTCOUNT(hospital_discharges[operating_provider_license_number])",
+            "formatString": "0",
+            "lineageTag": "34fdf892-ba2e-455e-9eac-fabe35ee6347"
+          },
+          {
+            "name": "Average Cost per Discharge",
+            "expression": "DIVIDE(SUM(hospital_discharges[total_costs]), [Total Discharges])",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "lineageTag": "12715c56-e94b-4509-8943-9b033d1e2abe"
+          },
+          {
+            "name": "Average Cost per Discharge ALL",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "expression": "CALCULATE([Average Cost per Discharge], ALL())",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "lineageTag": "401ea7ca-bd23-44ab-895f-6f3f0c397b36"
+          },
+          {
+            "name": "Average LOS per Day ALL",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "CALCULATE([Average LOS Days], ALL())",
+            "lineageTag": "4d95c8f4-299e-43d2-a1ba-dbf5859b9ff3"
+          },
+          {
+            "name": "% Var Average Cost per Discharge",
+            "expression": [
+              "",
+              "DIVIDE([Average Cost per Discharge] - [Average Cost per Discharge ALL], ",
+              "[Average Cost per Discharge ALL])"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "72060abd-cd99-4dd3-a9e9-867b7e01fad7"
+          },
+          {
+            "name": "% Var Average LOS Days",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Average LOS Days]- [Average LOS per Day ALL],",
+              "    [Average LOS per Day ALL]",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "d848996c-535a-4306-bc5e-93cdb022345b"
+          },
+          {
+            "name": "Title Selected Facility",
+            "expression": "\"Hospital Profile: \" & VALUES(hospital_discharges[facility_name])",
+            "lineageTag": "6bcb8d07-0721-4f23-8fa7-a1c1cace8582"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Measures",
+            "mode": "import",
+            "source": {
+              "expression": "Row(\"Column\", BLANK())",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "surgical_program_volume_summary",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "6f18f06623374abe8e25294c4d959d5d"
+          }
+        ],
+        "columns": [
+          {
+            "name": "facility_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "60523ec2-1203-4379-bd2f-b21436ae6f59",
+            "sourceColumn": "hospital_discharges[facility_name]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Total Discharges",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"surgical_program_volume_summary\",\"TableItemName\":\"Total Discharges (bins)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "e2f92d0a-8c52-426e-a135-a9ab4f18596d",
+            "sourceColumn": "[Total Discharges]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Total Surgeons",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "c00b6b92-d59c-4232-846a-c7e5853511b6",
+            "sourceColumn": "[Total Surgeons]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Total Discharges (bins)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"s\",\"Entity\":\"surgical_program_volume_summary\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Total Discharges\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Total Discharges\"}},\"Size\":200.0}}}}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "IF(",
+              "\tISBLANK('surgical_program_volume_summary'[Total Discharges]),",
+              "\tBLANK(),",
+              "\tINT('surgical_program_volume_summary'[Total Discharges] / 200) * 200",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "binningMetadata": {
+                    "binSize": {
+                      "unit": 0,
+                      "value": 200.0
+                    }
+                  },
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "surgical_program_volume_summary"
+                          }
+                        },
+                        "Property": "Total Discharges"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "07526b76-70ad-4217-a162-84d4bc42d1d3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Surgical Program Size",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(TRUE(),",
+              "surgical_program_volume_summary[Total Discharges (bins)] = 0, \"< 200\",",
+              "surgical_program_volume_summary[Total Discharges (bins)] = 200, \"200 - 399\",",
+              "surgical_program_volume_summary[Total Discharges (bins)] = 400, \"400 - 599\",",
+              "\">= 600\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "e5b73824-4fb1-4c62-be40-3f92bf967112",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "40fa2f77-3c20-44fa-9f84-32d7ecfe8737",
+        "partitions": [
+          {
+            "name": "surgical_program_volume_summary",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "",
+                "SUMMARIZECOLUMNS(hospital_discharges[facility_name], \"Total Discharges\", [Total Discharges], \"Total Surgeons\", [Total Surgeons])"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
